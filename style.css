@@ -1,24 +1,22 @@
-/* Font & base style */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background-color: white;
-  border: 12px solid #2F43F7; /* Briefly blue */
+  border: 12px solid #2F43F7;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: left;
+  perspective: 1000px; /* gives depth for 3D flip */
 }
 
-/* Layout container */
 .container {
   max-width: 800px;
   padding: 40px;
 }
 
-/* Logo */
 .logo {
   font-size: 6rem;
   font-weight: 800;
@@ -27,11 +25,6 @@ body {
   line-height: 1;
 }
 
-.dot {
-  color: #2F43F7;
-}
-
-/* Subtitle */
 .subtitle {
   font-size: 2rem;
   font-weight: 600;
@@ -43,18 +36,11 @@ body {
   color: #2F43F7;
 }
 
-/* Footer text */
-.date {
-  color: #2F43F7;
-  font-weight: 600;
-  margin-top: 40px;
-}
-
-/* Flipping text animation */
+/* Flip animation setup */
 .flip-text {
   display: inline-block;
   position: relative;
-  height: 1em;
+  height: 1.2em;
   overflow: hidden;
   vertical-align: bottom;
 }
@@ -67,9 +53,11 @@ body {
   width: 100%;
   opacity: 0;
   transform: rotateX(90deg);
-  animation: flipText 20s infinite;
+  transform-origin: bottom;
+  animation: flipText 20s cubic-bezier(0.4, 0.2, 0.2, 1) infinite;
 }
 
+/* Each text gets a delay so they cycle */
 .flip-text span:nth-child(1) { animation-delay: 0s; }
 .flip-text span:nth-child(2) { animation-delay: 5s; }
 .flip-text span:nth-child(3) { animation-delay: 10s; }
