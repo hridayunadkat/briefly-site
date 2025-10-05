@@ -1,0 +1,51 @@
+/* Font & base style */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  border: 12px solid #2F43F7; /* Briefly blue */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Layout container */
+.container {
+  max-width: 800px;
+  padding: 40px;
+}
+
+/* Logo */
+.logo {
+  font-size: 6rem;
+  font-weight: 800;
+  color: #2F43F7;
+  margin: 0;
+  line-height: 1;
+}
+
+.dot {
+  color: #2F43F7;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 20px;
+}
+
+.highlight {
+  color: #2F43F7;
+}
+
+/* Footer text */
+.date {
+  color: #2F43F7;
+  font-weight: 600;
+  margin-top: 40px;
+}
