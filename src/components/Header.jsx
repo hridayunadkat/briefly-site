@@ -14,11 +14,19 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false); // Close mobile menu after clicking
+  };
+
   const navItems = [
-    { label: 'Features', href: '#features' },
-    { label: 'Testimonials', href: '#testimonials' },
-    { label: 'Pricing', href: '#pricing' },
-    { label: 'Contact', href: '#contact' }
+    { label: 'Features', id: 'features' },
+    { label: 'Testimonials', id: 'testimonials' },
+    { label: 'Pricing', id: 'pricing' },
+    { label: 'Contact', id: 'contact' }
   ];
 
   return (
@@ -44,9 +52,9 @@ const Header = () => {
           <nav className="hidden md:block">
             <div className="flex items-center space-x-1 bg-slate-100/80 backdrop-blur-sm rounded-full px-2 py-2">
               {navItems.map((item) => (
-                <motion.a
+                <motion.button
                   key={item.label}
-                  href={item.href}
+                  onClick={() => scrollToSection(item.id)}
                   className="px-4 py-2 text-sm font-medium text-zinc-900 hover:text-blue-700 rounded-full transition-all duration-200 relative overflow-hidden"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -57,7 +65,7 @@ const Header = () => {
                     transition={{ duration: 0.2 }}
                   />
                   <span className="relative z-10">{item.label}</span>
-                </motion.a>
+                </motion.button>
               ))}
             </div>
           </nav>
@@ -95,14 +103,13 @@ const Header = () => {
           >
             <div className="px-4 py-4 space-y-2">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.label}
-                  href={item.href}
-                  className="block px-4 py-2 text-sm font-medium text-zinc-900 hover:text-blue-700 hover:bg-slate-100 rounded-lg transition-all duration-200"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => scrollToSection(item.id)}
+                  className="block w-full text-left px-4 py-2 text-sm font-medium text-zinc-900 hover:text-blue-700 hover:bg-slate-100 rounded-lg transition-all duration-200"
                 >
                   {item.label}
-                </a>
+                </button>
               ))}
               <button className="w-full bg-blue-700 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-800 transition-all duration-200 mt-4">
                 Get Started
