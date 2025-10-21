@@ -39,7 +39,7 @@ const Header = () => {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             {/*<h1 className="text-2xl font-bold text-blue-700 font-mono">Briefly</h1> */}
-            <h1 className="text-2xl font-bold text-blue-700 font-['Poppins']">Briefly</h1>
+            <h1 className="text-2xl font-bold text-blue-700">Briefly</h1>
           </motion.div>
 
           <nav className="hidden md:block">
