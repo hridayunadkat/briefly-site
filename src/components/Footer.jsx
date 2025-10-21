@@ -56,13 +56,13 @@ import React, { useState } from 'react';
           { name: 'Press Kit', href: '#' },
           { name: 'Contact', href: '#contact' }
         ],
-        Resources: [
-          { name: 'Help Center', href: '#' },
-          { name: 'Community', href: '#' },
-          { name: 'Tutorials', href: '#' },
-          { name: 'Webinars', href: '#' },
-          { name: 'Case Studies', href: '#portfolio' }
-        ],
+        // Resources: [
+        //   { name: 'Help Center', href: '#' },
+        //   { name: 'Community', href: '#' },
+        //   { name: 'Tutorials', href: '#' },
+        //   { name: 'Webinars', href: '#' },
+        //   { name: 'Case Studies', href: '#portfolio' }
+        // ],
         Legal: [
           { name: 'Privacy Policy', href: '#' },
           { name: 'Terms of Service', href: '#' },
@@ -147,7 +147,7 @@ import React, { useState } from 'react';
 
             {/* Main Footer Content */}
             <div className="py-16">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                 {/* Brand Section */}
                 <motion.div
                   className="lg:col-span-2"
@@ -160,11 +160,10 @@ import React, { useState } from 'react';
                     className="text-3xl font-bold text-blue-400 font-mono mb-4"
                     whileHover={{ scale: 1.05 }}
                   >
-                    SaaSFlow
+                    Briefly
                   </motion.h2>
                   <p className="text-zinc-400 mb-6 leading-relaxed">
-                    Transform your workflow with our AI-powered SaaS platform. 
-                    Scale your business beyond limits with enterprise-grade security and performance.
+                    We've built the first 24/7 receptionist that can manage your intake from first call to case kickoff.
                   </p>
 
                   {/* Social Links */}
@@ -223,7 +222,7 @@ import React, { useState } from 'react';
               transition={{ duration: 0.8, delay: 0.4 }}
             >
               <div className="text-zinc-400 text-sm mb-4 md:mb-0">
-                © 2025 SaaSFlow. All rights reserved.
+                © 2025 Briefly. All rights reserved.
               </div>
 
               <div className="flex items-center text-zinc-400 text-sm">
@@ -235,16 +234,7 @@ import React, { useState } from 'react';
                 >
                   <Heart className="w-4 h-4 text-red-500 fill-current" />
                 </motion.div>
-                <span>by</span>
-                <motion.a
-                  href="https://meku.dev"
-                  target="_blank"
-                  rel="nofollow"
-                  className="ml-1 text-blue-400 hover:text-blue-300 transition-colors duration-200"
-                  whileHover={{ scale: 1.05 }}
-                >
-                  Meku.dev
-                </motion.a>
+                <span>by Hriday Unadkat </span>
               </div>
             </motion.div>
           </div>
