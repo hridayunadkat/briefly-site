@@ -83,7 +83,7 @@ import React, { useState } from 'react';
         <footer className="bg-zinc-900 text-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Newsletter Section */}
-            <motion.div
+            {/* <motion.div
               className="py-16 border-b border-zinc-800"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -143,7 +143,7 @@ import React, { useState } from 'react';
                   </div>
                 </form>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Main Footer Content */}
             <div className="py-16">

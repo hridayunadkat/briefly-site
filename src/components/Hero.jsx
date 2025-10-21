@@ -47,7 +47,7 @@ import React from 'react';
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                Handle intake from first call to case kickoff.
+                We've built the first 24/7 receptionist that can manage your intake from first call to case kickoff.
               </motion.p>
 
               <motion.div
