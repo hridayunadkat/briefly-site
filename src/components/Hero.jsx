@@ -47,8 +47,7 @@ import React from 'react';
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
-                Transform your workflow with our AI-powered SaaS platform. 
-                Increase productivity by 300% and reduce operational costs while scaling effortlessly.
+                Handle intake from first call to case kickoff.
               </motion.p>
 
               <motion.div
