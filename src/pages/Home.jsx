@@ -15,7 +15,7 @@ import React from 'react';
           <main>
             <Hero />
             <Features />
-            <Portfolio />
+            {/* <Portfolio /> */}
             <Testimonials />
             <Pricing />
             <Contact />
