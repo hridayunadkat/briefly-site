@@ -34,10 +34,10 @@ import React from 'react';
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                Scale Your Business
+                Handle your intake
                 <br />
                 <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent">
-                  Beyond Limits
+                  briefly.
                 </span>
               </motion.h1>
 
