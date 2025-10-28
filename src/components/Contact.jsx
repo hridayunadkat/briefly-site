@@ -41,20 +41,20 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      content: 'hello@convertly.com',
-      description: 'Send us an email anytime'
+      content: 'briefly@gmail.com',
+      description: 'Send us an email anytime!'
     },
     {
       icon: Phone,
       title: 'Call Us',
-      content: '+1 (555) 123-4567',
+      content: '+1 (703) 991-3088',
       description: 'Mon-Fri from 8am to 6pm'
     },
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: '123 Business Ave, Suite 100',
-      description: 'San Francisco, CA 94105'
+      content: 'Princeton Universiy',
+      description: 'Princeton, NJ 08544'
     }
   ];
 
@@ -65,7 +65,7 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50">
+    <section id="contact" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-20"
@@ -79,7 +79,7 @@ const Contact = () => {
             <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Started?</span>
           </h2>
           <p className="text-xl text-zinc-600 max-w-3xl mx-auto">
-            Let's discuss how Convertly can transform your business. Get in touch with our team today.
+            Let's discuss how Briefly can transform your firm's intake.
           </p>
         </motion.div>
 
@@ -246,7 +246,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Stats */}
+            {/* Stats - Why choose us? (temporarily commented out)
             <motion.div
               className="bg-gradient-to-br from-blue-700 to-cyan-500 rounded-3xl p-8 text-white"
               initial={{ opacity: 0, y: 30 }}
@@ -272,6 +272,7 @@ const Contact = () => {
                 ))}
               </div>
             </motion.div>
+            */}
 
             {/* Map Placeholder */}
             <motion.div
