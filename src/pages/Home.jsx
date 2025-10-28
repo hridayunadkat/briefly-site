@@ -3,7 +3,7 @@ import React from 'react';
     import Hero from '../components/Hero';
     import Features from '../components/Features';
     import Portfolio from '../components/Portfolio';
-    import Testimonials from '../components/Testimonials';
+    // import Testimonials from '../components/Testimonials';
     import Pricing from '../components/Pricing';
     import Contact from '../components/Contact';
     import Footer from '../components/Footer';
@@ -16,7 +16,7 @@ import React from 'react';
             <Hero />
             <Features />
             {/* <Portfolio /> */}
-            <Testimonials />
+            {/* <Testimonials /> */}
             <Pricing />
             <Contact />
           </main>

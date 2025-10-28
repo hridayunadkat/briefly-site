@@ -85,7 +85,7 @@ import React from 'react';
                 <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Modern Law Firms</span>
               </h2>
               <p className="text-xl text-zinc-600 max-w-3xl mx-auto">
-                Everything you need to streamline your workflow, boost productivity, and scale your firm efficiently.
+                We provide everything you need to focus on the billable work that matters and scale your firm efficiently.
               </p>
             </motion.div>
 
