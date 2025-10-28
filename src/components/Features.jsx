@@ -1,44 +1,50 @@
 import React from 'react';
     import { motion } from 'framer-motion';
-    import { Zap, Shield, BarChart3, Users, Rocket, Brain } from 'lucide-react';
+    import { Filter, Database, Clock, MessageSquare, Mic, TrendingUp } from 'lucide-react';
 
     const Features = () => {
       const features = [
         {
-          icon: Brain,
-          title: 'AI-Powered Analytics',
-          description: 'Get intelligent insights and predictions that help you make data-driven decisions faster.',
-          color: 'from-blue-500 to-blue-700'
+          icon: Filter,
+          title: 'Smart Lead Qualification',
+          description:
+            'Automatically screens callers for case relevance, urgency, and fit—so attorneys only spend time on clients who truly matter.',
+          color: 'from-indigo-500 to-indigo-700'
         },
         {
-          icon: Zap,
-          title: 'Lightning Fast Performance',
-          description: 'Experience blazing-fast load times and real-time updates across all your workflows.',
-          color: 'from-cyan-500 to-cyan-700'
+          icon: Database,
+          title: 'Seamless CRM Integration',
+          description:
+            'Connect instantly with leading legal CRMs like Clio and MyCase to sync client data, notes, and transcripts in real time.',
+          color: 'from-blue-500 to-sky-600'
         },
         {
-          icon: Shield,
-          title: 'Enterprise Security',
-          description: 'Bank-level encryption and compliance with SOC 2, GDPR, and HIPAA standards.',
-          color: 'from-slate-500 to-slate-700'
+          icon: Clock,
+          title: '24/7 Client Coverage',
+          description:
+            'Never miss a call again. Briefly handles after-hours, overflow, and weekend calls with consistent professionalism and accuracy.',
+          color: 'from-emerald-500 to-teal-600'
         },
         {
-          icon: BarChart3,
-          title: 'Advanced Reporting',
-          description: 'Create custom dashboards and reports that provide actionable insights for your team.',
-          color: 'from-blue-600 to-cyan-600'
+          icon: MessageSquare,
+          title: 'Continuous Learning AI',
+          description:
+            'Gets smarter with every conversation—adapting to your firm’s tone, intake preferences, and client needs over time.',
+          color: 'from-purple-500 to-purple-700'
         },
         {
-          icon: Users,
-          title: 'Team Collaboration',
-          description: 'Seamlessly collaborate with your team using real-time editing and communication tools.',
-          color: 'from-cyan-600 to-blue-600'
+          icon: Mic,
+          title: 'Call Recording & Transcription',
+          description:
+            'Automatically record and transcribe every client conversation for review, compliance, and training—all securely stored in your CRM.',
+          color: 'from-amber-500 to-orange-600'
         },
         {
-          icon: Rocket,
-          title: 'Scalable Infrastructure',
-          description: 'Automatically scale your resources up or down based on demand without any downtime.',
-          color: 'from-slate-600 to-zinc-600'
+          icon: TrendingUp,
+          title: 'Built-in Performance Analytics',
+          description:
+            'Track intake success rates, missed-call recovery, and ROI directly from your dashboard to make smarter operational decisions.',
+          color: 'from-green-500 to-emerald-700'
         }
       ];
 
@@ -76,10 +82,10 @@ import React from 'react';
             >
               <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-6">
                 Powerful Features for
-                <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Modern Teams</span>
+                <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Modern Law Firms</span>
               </h2>
               <p className="text-xl text-zinc-600 max-w-3xl mx-auto">
-                Everything you need to streamline your workflow, boost productivity, and scale your business efficiently.
+                Everything you need to streamline your workflow, boost productivity, and scale your firm efficiently.
               </p>
             </motion.div>
 
