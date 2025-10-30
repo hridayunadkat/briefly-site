@@ -58,7 +58,7 @@ import React from 'react';
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <motion.button
-                  className="bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-800 transition-all duration-200 shadow-xl hover:shadow-2xl flex items-center group"
+                  className="bg-gradient-to-r from-brand-600 to-brand-400 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-200 shadow-xl hover:shadow-2xl flex items-center group"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -105,32 +105,18 @@ import React from 'react';
             </div>
           </div>
 
-          {/* Floating Elements */}
+          {/* Floating Elements (removed per request)
           <motion.div
             className="absolute top-1/4 left-10 w-4 h-4 bg-blue-400 rounded-full"
-            animate={{
-              y: [0, -20, 0],
-              opacity: [0.5, 1, 0.5]
-            }}
-            transition={{
-              duration: 3,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
+            animate={{ y: [0, -20, 0], opacity: [0.5, 1, 0.5] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.div
             className="absolute top-1/3 right-20 w-6 h-6 bg-cyan-400 rounded-full"
-            animate={{
-              y: [0, 20, 0],
-              opacity: [0.3, 0.8, 0.3]
-            }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: 1
-            }}
+            animate={{ y: [0, 20, 0], opacity: [0.3, 0.8, 0.3] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           />
+          */}
         </section>
       );
     };
