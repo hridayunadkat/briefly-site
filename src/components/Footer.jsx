@@ -157,7 +157,7 @@ import React, { useState } from 'react';
                   transition={{ duration: 0.8 }}
                 >
                   <motion.h2
-                    className="text-3xl font-bold text-blue-400 mb-4"
+                    className="text-3xl font-bold text-brand-400 mb-4"
                     whileHover={{ scale: 1.05 }}
                   >
                     Briefly

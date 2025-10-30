@@ -19,7 +19,7 @@ import React from 'react';
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
             <div className="text-center">
               <motion.div
-                className="inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-8"
+                className="inline-flex items-center px-4 py-2 bg-brand-50 text-brand-600 rounded-full text-sm font-medium mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
