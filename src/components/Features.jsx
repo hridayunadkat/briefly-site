@@ -9,42 +9,42 @@ import React from 'react';
           title: 'Smart Lead Qualification',
           description:
             'Automatically screens callers for case relevance, urgency, and fit—so attorneys only spend time on clients who truly matter.',
-          color: 'from-indigo-500 to-indigo-700'
+          color: 'from-brand-600 to-brand-400'
         },
         {
           icon: Database,
           title: 'Seamless CRM Integration',
           description:
             'Connect instantly with leading legal CRMs like Clio and MyCase to sync client data, notes, and transcripts in real time.',
-          color: 'from-blue-500 to-sky-600'
+          color: 'from-brand-600 to-brand-400'
         },
         {
           icon: Clock,
           title: '24/7 Client Coverage',
           description:
             'Never miss a call again. Briefly handles after-hours, overflow, and weekend calls with consistent professionalism and accuracy.',
-          color: 'from-emerald-500 to-teal-600'
+          color: 'from-brand-600 to-brand-400'
         },
         {
           icon: MessageSquare,
           title: 'Continuous Learning AI',
           description:
             'Gets smarter with every conversation—adapting to your firm’s tone, intake preferences, and client needs over time.',
-          color: 'from-purple-500 to-purple-700'
+          color: 'from-brand-600 to-brand-400'
         },
         {
           icon: Mic,
           title: 'Call Recording & Transcription',
           description:
             'Automatically record and transcribe every client conversation for review, compliance, and training—all securely stored in your CRM.',
-          color: 'from-amber-500 to-orange-600'
+          color: 'from-brand-600 to-brand-400'
         },
         {
           icon: TrendingUp,
           title: 'Built-in Performance Analytics',
           description:
             'Track intake success rates, missed-call recovery, and ROI directly from your dashboard to make smarter operational decisions.',
-          color: 'from-green-500 to-emerald-700'
+          color: 'from-brand-600 to-brand-400'
         }
       ];
 
