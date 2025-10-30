@@ -78,7 +78,7 @@ import React from 'react';
                 </motion.button>
               </motion.div>
 
-              {/* Social Proof */}
+              {/* Social Proof (temporarily commented out)
               <motion.div
                 className="border-t border-slate-200 pt-12"
                 initial={{ opacity: 0 }}
@@ -101,6 +101,7 @@ import React from 'react';
                   ))}
                 </div>
               </motion.div>
+              */}
             </div>
           </div>
 

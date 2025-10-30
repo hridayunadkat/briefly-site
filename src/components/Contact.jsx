@@ -74,7 +74,7 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-black text-zinc-900 mb-6 font-playfair">
             Ready to Get
             <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Started?</span>
           </h2>

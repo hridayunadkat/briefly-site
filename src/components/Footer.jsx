@@ -45,15 +45,15 @@ import React, { useState } from 'react';
         Product: [
           { name: 'Features', href: '#features' },
           { name: 'Pricing', href: '#pricing' },
-          { name: 'API Documentation', href: '#' },
-          { name: 'Integrations', href: '#' },
-          { name: 'Changelog', href: '#' }
+          // { name: 'API Documentation', href: '#' },
+          // { name: 'Integrations', href: '#' },
+          // { name: 'Changelog', href: '#' }
         ],
         Company: [
           { name: 'About Us', href: '#' },
-          { name: 'Careers', href: '#' },
-          { name: 'Blog', href: '#' },
-          { name: 'Press Kit', href: '#' },
+          // { name: 'Careers', href: '#' },
+          // { name: 'Blog', href: '#' },
+          // { name: 'Press Kit', href: '#' },
           { name: 'Contact', href: '#contact' }
         ],
         // Resources: [
@@ -66,8 +66,8 @@ import React, { useState } from 'react';
         Legal: [
           { name: 'Privacy Policy', href: '#' },
           { name: 'Terms of Service', href: '#' },
-          { name: 'Cookie Policy', href: '#' },
-          { name: 'GDPR', href: '#' },
+          // { name: 'Cookie Policy', href: '#' },
+          // { name: 'GDPR', href: '#' },
           { name: 'Security', href: '#' }
         ]
       };
