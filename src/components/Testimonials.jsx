@@ -89,7 +89,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="testimonials" className="py-24 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+    <section id="testimonials" className="py-24 bg-gradient-to-br from-brand-50 via-white to-brand-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-20"
@@ -100,7 +100,7 @@ const Testimonials = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-6">
             Loved by
-            <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> 10,000+ Teams</span>
+            <span className="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent"> 10,000+ Teams</span>
           </h2>
           <p className="text-xl text-zinc-600 max-w-3xl mx-auto">
             See what industry leaders are saying about their transformation with Convertly.
@@ -116,10 +116,10 @@ const Testimonials = () => {
           >
             <button
               onClick={prevTestimonial}
-              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 mr-6 hover:bg-blue-50"
+              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 mr-6 hover:bg-brand-50"
               aria-label="Previous testimonial"
             >
-              <ChevronLeft className="w-6 h-6 text-blue-700" />
+              <ChevronLeft className="w-6 h-6 text-brand-600" />
             </button>
 
             <div className="max-w-4xl mx-auto">
@@ -132,7 +132,7 @@ const Testimonials = () => {
                   exit={{ opacity: 0, y: -50 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <Quote className="w-12 h-12 text-blue-200 mb-6" />
+                  <Quote className="w-12 h-12 text-brand-200 mb-6" />
                   
                   <blockquote className="text-xl md:text-2xl text-zinc-700 leading-relaxed mb-8 font-medium">
                     "{testimonials[currentIndex].content}"
@@ -165,7 +165,7 @@ const Testimonials = () => {
                     </div>
 
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-blue-700">
+                      <div className="text-2xl font-bold text-brand-600">
                         {testimonials[currentIndex].metric}
                       </div>
                       <div className="text-sm text-zinc-500">
@@ -179,10 +179,10 @@ const Testimonials = () => {
 
             <button
               onClick={nextTestimonial}
-              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 ml-6 hover:bg-blue-50"
+              className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-200 ml-6 hover:bg-brand-50"
               aria-label="Next testimonial"
             >
-              <ChevronRight className="w-6 h-6 text-blue-700" />
+              <ChevronRight className="w-6 h-6 text-brand-600" />
             </button>
           </div>
 

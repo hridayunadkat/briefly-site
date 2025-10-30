@@ -8,12 +8,12 @@ import React from 'react';
       ];
 
       return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-50 via-white to-brand-200">
           {/* Background Elements */}
           <div className="absolute inset-0">
-            <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-200/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-100/20 to-cyan-100/20 rounded-full blur-3xl"></div>
+            <div className="absolute top-20 left-10 w-72 h-72 bg-brand-200/30 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-20 right-10 w-96 h-96 bg-brand-200/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-brand-100/20 to-brand-200/20 rounded-full blur-3xl"></div>
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
@@ -37,7 +37,7 @@ import React from 'react';
               >
                 Handle your intake
                 <br />
-                <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent">
                   briefly.
                 </span>
               </motion.h1>
@@ -72,7 +72,7 @@ import React from 'react';
                   whileTap={{ scale: 0.95 }}
                 >
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg mr-3 group-hover:shadow-xl transition-all duration-200">
-                    <Play className="w-5 h-5 text-blue-700 ml-1" />
+                    <Play className="w-5 h-5 text-brand-600 ml-1" />
                   </div>
                   Watch Demo
                 </motion.button>

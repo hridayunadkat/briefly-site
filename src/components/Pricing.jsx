@@ -37,7 +37,7 @@ import React, { useState } from 'react';
             'API access',
             'Advanced security'
           ],
-          color: 'from-blue-600 to-cyan-600',
+          color: 'from-brand-600 to-brand-400',
           popular: true
         },
         {
@@ -57,7 +57,7 @@ import React, { useState } from 'react';
             'Custom training',
             'SLA guarantee'
           ],
-          color: 'from-cyan-600 to-blue-600',
+          color: 'from-brand-400 to-brand-600',
           popular: false
         }
       ];
@@ -85,7 +85,7 @@ import React, { useState } from 'react';
       };
 
       return (
-        <section id="pricing" className="py-24 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+        <section id="pricing" className="py-24 bg-gradient-to-br from-brand-50 via-white to-brand-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               className="text-center mb-16"
@@ -96,7 +96,7 @@ import React, { useState } from 'react';
             >
               <h2 className="text-4xl md:text-5xl font-black text-zinc-900 mb-6 font-playfair">
                 Simple, Transparent
-                <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Pricing</span>
+                <span className="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent"> Pricing</span>
               </h2>
               <p className="text-xl text-zinc-600 max-w-3xl mx-auto mb-12">
                 Choose the perfect plan for your team. All plans include our core features with no hidden fees.
@@ -113,7 +113,7 @@ import React, { useState } from 'react';
                 <button
                   onClick={() => setIsYearly(false)}
                   className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
-                    !isYearly ? 'bg-white text-blue-700 shadow-sm' : 'text-zinc-600'
+                    !isYearly ? 'bg-white text-brand-600 shadow-sm' : 'text-zinc-600'
                   }`}
                 >
                   Monthly
@@ -121,11 +121,11 @@ import React, { useState } from 'react';
                 <button
                   onClick={() => setIsYearly(true)}
                   className={`px-6 py-2 rounded-full font-medium transition-all duration-200 relative ${
-                    isYearly ? 'bg-white text-blue-700 shadow-sm' : 'text-zinc-600'
+                    isYearly ? 'bg-white text-brand-600 shadow-sm' : 'text-zinc-600'
                   }`}
                 >
                   Yearly
-                  <span className="absolute -top-2 -right-2 bg-cyan-500 text-white text-xs px-2 py-1 rounded-full">
+                  <span className="absolute -top-2 -right-2 bg-brand-400 text-white text-xs px-2 py-1 rounded-full">
                     Save 20%
                   </span>
                 </button>
@@ -157,7 +157,7 @@ import React, { useState } from 'react';
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.5 }}
                     >
-                      <div className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 py-2 rounded-full text-sm font-semibold flex items-center">
+                      <div className="bg-gradient-to-r from-brand-600 to-brand-400 text-white px-6 py-2 rounded-full text-sm font-semibold flex items-center">
                         <Star className="w-4 h-4 mr-1 fill-current" />
                         Most Popular
                       </div>
@@ -199,7 +199,7 @@ import React, { useState } from 'react';
                     <motion.button
                       className={`w-full py-4 rounded-full font-semibold text-lg transition-all duration-200 ${
                         plan.popular
-                          ? 'bg-gradient-to-r from-blue-600 to-cyan-600 text-white hover:shadow-xl'
+                          ? 'bg-gradient-to-r from-brand-600 to-brand-400 text-white hover:shadow-xl'
                           : 'bg-slate-100 text-zinc-900 hover:bg-slate-200'
                       }`}
                       whileHover={{ scale: 1.02, y: -2 }}
@@ -220,7 +220,7 @@ import React, { useState } from 'react';
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: featureIndex * 0.1 }}
                       >
-                        <Check className="w-5 h-5 text-cyan-500 mr-3 flex-shrink-0" />
+                        <Check className="w-5 h-5 text-brand-400 mr-3 flex-shrink-0" />
                         <span className="text-zinc-600">{feature}</span>
                       </motion.div>
                     ))}
@@ -241,14 +241,14 @@ import React, { useState } from 'react';
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <motion.button
-                  className="text-blue-700 hover:text-blue-800 font-medium underline"
+                  className="text-brand-600 hover:text-brand-700 font-medium underline"
                   whileHover={{ scale: 1.05 }}
                 >
                   Compare all features
                 </motion.button>
                 <span className="text-zinc-400">•</span>
                 <motion.button
-                  className="text-blue-700 hover:text-blue-800 font-medium underline"
+                  className="text-brand-600 hover:text-brand-700 font-medium underline"
                   whileHover={{ scale: 1.05 }}
                 >
                   Contact sales for custom pricing

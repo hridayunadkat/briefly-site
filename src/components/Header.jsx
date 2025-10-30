@@ -46,7 +46,7 @@ const Header = () => {
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             {/*<h1 className="text-2xl font-bold text-blue-700 font-mono">Briefly</h1> */}
-            <h1 className="text-2xl font-bold text-blue-700">Briefly</h1>
+            <h1 className="text-2xl font-bold text-brand-600">Briefly</h1>
           </motion.div>
 
           <nav className="hidden md:block">
@@ -55,7 +55,7 @@ const Header = () => {
                 <motion.button
                   key={item.label}
                   onClick={() => scrollToSection(item.id)}
-                  className="px-4 py-2 text-sm font-medium text-zinc-900 hover:text-blue-700 rounded-full transition-all duration-200 relative overflow-hidden"
+                  className="px-4 py-2 text-sm font-medium text-zinc-900 hover:text-brand-600 rounded-full transition-all duration-200 relative overflow-hidden"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -72,7 +72,7 @@ const Header = () => {
 
           <div className="hidden md:block">
             <motion.button
-              className="bg-blue-700 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-800 transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-brand-600 text-white px-6 py-2 rounded-full font-medium hover:bg-brand-700 transition-all duration-200 shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -83,7 +83,7 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-zinc-900 hover:text-blue-700 transition-colors duration-200"
+              className="text-zinc-900 hover:text-brand-600 transition-colors duration-200"
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

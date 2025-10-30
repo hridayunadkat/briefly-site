@@ -76,7 +76,7 @@ const Contact = () => {
         >
           <h2 className="text-4xl md:text-5xl font-black text-zinc-900 mb-6 font-playfair">
             Ready to Get
-            <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Started?</span>
+            <span className="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent"> Started?</span>
           </h2>
           <p className="text-xl text-zinc-600 max-w-3xl mx-auto">
             Let's discuss how Briefly can transform your firm's intake.
@@ -192,7 +192,7 @@ const Contact = () => {
               <motion.button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-700 to-cyan-500 text-white py-4 rounded-xl font-semibold text-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                className="w-full bg-gradient-to-r from-brand-600 to-brand-400 text-white py-4 rounded-xl font-semibold text-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
                 whileHover={{ scale: isSubmitting ? 1 : 1.02, y: isSubmitting ? 0 : -2 }}
                 whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
               >
@@ -233,7 +233,7 @@ const Contact = () => {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     whileHover={{ y: -4 }}
                   >
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-brand-600 to-brand-400 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
                       <info.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>

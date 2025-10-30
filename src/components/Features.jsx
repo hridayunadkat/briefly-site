@@ -85,7 +85,8 @@ import React from 'react';
                 <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Modern Law Firms</span>
               </h2> */}
               <h2 className="text-4xl md:text-5xl font-black text-zinc-900 mb-6 font-playfair">
-                Powerful Features for Modern Law Firms
+                Powerful Features for
+                <span className="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent"> Modern Law Firms</span>
               </h2>
               <p className="text-xl text-zinc-600 max-w-3xl mx-auto">
                 We provide everything you need to focus on the billable work that matters and scale your firm efficiently.
@@ -115,7 +116,7 @@ import React from 'react';
                       <feature.icon className="w-8 h-8 text-white" />
                     </motion.div>
 
-                    <h3 className="text-xl font-bold text-zinc-900 mb-4 group-hover:text-blue-700 transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-zinc-900 mb-4 group-hover:text-brand-600 transition-colors duration-300">
                       {feature.title}
                     </h3>
 
@@ -124,7 +125,7 @@ import React from 'react';
                     </p>
 
                     {/* Hover Effect Background */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-cyan-50/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-brand-50/50 to-brand-100/50 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
                   </div>
                 </motion.div>
               ))}
