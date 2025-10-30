@@ -80,9 +80,12 @@ import React from 'react';
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl md:text-5xl font-black text-zinc-900 mb-6 font-playfair">
+              {/* <h2 className="text-4xl md:text-5xl font-black text-zinc-900 mb-6 font-playfair">
                 Powerful Features for
                 <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Modern Law Firms</span>
+              </h2> */}
+              <h2 className="text-4xl md:text-5xl font-black text-zinc-900 mb-6 font-playfair">
+                Powerful Features for Modern Law Firms
               </h2>
               <p className="text-xl text-zinc-600 max-w-3xl mx-auto">
                 We provide everything you need to focus on the billable work that matters and scale your firm efficiently.
@@ -134,13 +137,13 @@ import React from 'react';
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <motion.button
+              {/* <motion.button
                 className="bg-gradient-to-r from-blue-700 to-cyan-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Explore All Features
-              </motion.button>
+              </motion.button> */}
             </motion.div>
           </div>
         </section>
