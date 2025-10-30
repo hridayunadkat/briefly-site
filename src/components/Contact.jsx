@@ -100,7 +100,7 @@ const Contact = () => {
                   <motion.input
                     type="text"
                     placeholder="Your Name"
-                    className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-0 transition-all duration-200 ${
+                    className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-0 transition-all duration-200 text-zinc-900 placeholder:text-zinc-400 ${
                       errors.name 
                         ? 'border-red-300 focus:border-red-500' 
                         : 'border-slate-200 focus:border-blue-500'
@@ -123,7 +123,7 @@ const Contact = () => {
                   <motion.input
                     type="email"
                     placeholder="Your Email"
-                    className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-0 transition-all duration-200 ${
+                    className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-0 transition-all duration-200 text-zinc-900 placeholder:text-zinc-400 ${
                       errors.email 
                         ? 'border-red-300 focus:border-red-500' 
                         : 'border-slate-200 focus:border-blue-500'
@@ -147,7 +147,7 @@ const Contact = () => {
                 <motion.input
                   type="text"
                   placeholder="Company Name"
-                  className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-0 transition-all duration-200 ${
+                  className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-0 transition-all duration-200 text-zinc-900 placeholder:text-zinc-400 ${
                     errors.company 
                       ? 'border-red-300 focus:border-red-500' 
                       : 'border-slate-200 focus:border-blue-500'
@@ -170,7 +170,7 @@ const Contact = () => {
                 <motion.textarea
                   rows={6}
                   placeholder="Tell us about your project..."
-                  className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-0 transition-all duration-200 resize-none ${
+                  className={`w-full px-4 py-4 border-2 rounded-xl focus:outline-none focus:ring-0 transition-all duration-200 resize-none text-zinc-900 placeholder:text-zinc-400 ${
                     errors.message 
                       ? 'border-red-300 focus:border-red-500' 
                       : 'border-slate-200 focus:border-blue-500'
@@ -274,20 +274,7 @@ const Contact = () => {
             </motion.div>
             */}
 
-            {/* Map Placeholder */}
-            <motion.div
-              className="bg-slate-200 rounded-2xl h-64 flex items-center justify-center"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <div className="text-center text-zinc-600">
-                <MapPin className="w-12 h-12 mx-auto mb-2" />
-                <p className="font-medium">Interactive Map</p>
-                <p className="text-sm">San Francisco, CA</p>
-              </div>
-            </motion.div>
+            {/* Map Placeholder removed per request */}
           </motion.div>
         </div>
       </div>

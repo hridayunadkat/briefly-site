@@ -85,11 +85,11 @@ import React from 'react';
                 <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Modern Law Firms</span>
               </h2> */}
               <h2 className="text-4xl md:text-5xl font-black text-zinc-900 mb-6 font-playfair">
-                Powerful Features for
-                <span className="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent"> Modern Law Firms</span>
+                Focus on the billable work that
+                <span className="bg-gradient-to-r from-brand-600 to-brand-400 bg-clip-text text-transparent"> matters.</span>
               </h2>
               <p className="text-xl text-zinc-600 max-w-3xl mx-auto">
-                We provide everything you need to focus on the billable work that matters and scale your firm efficiently.
+                We provide everything you need so that you can fight for your clients and scale your firm efficiently, not drown in intake calls.
               </p>
             </motion.div>
 
