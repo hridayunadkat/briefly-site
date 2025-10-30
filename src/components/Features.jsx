@@ -80,7 +80,7 @@ import React from 'react';
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-zinc-900 mb-6 font-playfair">
                 Powerful Features for
                 <span className="bg-gradient-to-r from-blue-700 to-cyan-500 bg-clip-text text-transparent"> Modern Law Firms</span>
               </h2>

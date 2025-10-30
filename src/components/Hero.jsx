@@ -25,7 +25,8 @@ import React from 'react';
                 transition={{ duration: 0.6 }}
               >
                 <Star className="w-4 h-4 mr-2 fill-current" />
-                Trusted by 10,000+ businesses worldwide
+                {/* Trusted by 10,000+ businesses worldwide */}
+                Backed by the Beta Fund
               </motion.div>
 
               <motion.h1
