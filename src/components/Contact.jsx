@@ -27,14 +27,32 @@ const Contact = () => {
 
   const onSubmit = async (data) => {
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    console.log('Form submitted:', data);
-    toast.success('Message sent successfully! We\'ll get back to you within 24 hours.');
-    reset();
-    setIsSubmitting(false);
+    try {
+      const formData = new FormData();
+      formData.append('access_key', 'a1bb5cfd-b2fb-41ea-bd1b-bb0a9de9b94f');
+      formData.append('name', data.name);
+      formData.append('email', data.email);
+      formData.append('company', data.company);
+      formData.append('message', data.message);
+      formData.append('subject', 'New Briefly contact form submission');
+
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        toast.success('Message sent! We\'ll get back to you within 24 hours.');
+        reset();
+      } else {
+        toast.error('Something went wrong. Please try again.');
+      }
+    } catch (err) {
+      toast.error('Network error. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -53,7 +71,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Visit Us',
-      content: 'Princeton Universiy',
+      content: 'Princeton University',
       description: 'Princeton, NJ 08544'
     }
   ];
