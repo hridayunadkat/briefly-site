@@ -196,17 +196,30 @@ import React, { useState } from 'react';
                   >
                     <h4 className="font-semibold text-white mb-4">{category}</h4>
                     <ul className="space-y-3">
-                      {links.map((link) => (
-                        <li key={link.name}>
-                          <motion.a
-                            href={link.href}
-                            className="text-zinc-400 hover:text-white transition-colors duration-200"
-                            whileHover={{ x: 4 }}
-                          >
-                            {link.name}
-                          </motion.a>
-                        </li>
-                      ))}
+                      {links.map((link) => {
+                        const isSectionLink = link.href.startsWith('#') && ['features', 'pricing', 'contact'].some(id => link.href.includes(id));
+                        return (
+                          <li key={link.name}>
+                            <motion.a
+                              href={link.href}
+                              onClick={(e) => {
+                                if (isSectionLink) {
+                                  e.preventDefault();
+                                  const sectionId = link.href.substring(1);
+                                  const element = document.getElementById(sectionId);
+                                  if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                  }
+                                }
+                              }}
+                              className="text-zinc-400 hover:text-white transition-colors duration-200 cursor-pointer"
+                              whileHover={{ x: 4 }}
+                            >
+                              {link.name}
+                            </motion.a>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </motion.div>
                 ))}
