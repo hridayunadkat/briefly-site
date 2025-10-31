@@ -12,6 +12,7 @@ import React, { useState } from 'react';
           monthlyPrice: 99,
           yearlyPrice: 999,
           onboardingFee: 149,
+          calendlyUrl: 'https://calendly.com/usebriefly/kickoff-meeting-starter-plan',
           features: [
             'Up to 3 team members',
             'Unlimited AI intake calls',
@@ -29,6 +30,7 @@ import React, { useState } from 'react';
           monthlyPrice: 249,
           yearlyPrice: 2490,
           onboardingFee: 299,
+          calendlyUrl: 'https://calendly.com/usebriefly/kickoff-meeting-starter-plan-clone',
           features: [
             'Up to 10 team members',
             'Unlimited AI intake calls',
@@ -50,6 +52,7 @@ import React, { useState } from 'react';
           monthlyPrice: 'Custom',
           yearlyPrice: 'Custom',
           onboardingFee: 'Custom',
+          calendlyUrl: 'https://calendly.com/usebriefly/kickoff-meeting-professional-plan-clone',
           features: [
             'Custom number of team members',
             'Unlimited AI intake calls',
@@ -216,8 +219,11 @@ import React, { useState } from 'react';
                       </div>
                     </div>
 
-                    <motion.button
-                      className={`w-full py-4 rounded-full font-semibold text-lg transition-all duration-200 ${
+                    <motion.a
+                      href={plan.calendlyUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`w-full py-4 rounded-full font-semibold text-lg transition-all duration-200 block text-center ${
                         plan.popular
                           ? 'bg-gradient-to-r from-brand-600 to-brand-400 text-white hover:shadow-xl'
                           : 'bg-slate-100 text-zinc-900 hover:bg-slate-200'
@@ -226,7 +232,7 @@ import React, { useState } from 'react';
                       whileTap={{ scale: 0.98 }}
                     >
                       {plan.popular ? 'Start Free Trial' : 'Get Started'}
-                    </motion.button>
+                    </motion.a>
                   </div>
 
                   <div className="space-y-4">
