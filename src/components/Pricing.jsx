@@ -8,11 +8,12 @@ import React, { useState } from 'react';
       const plans = [
         {
           name: 'Starter',
-          description: 'Perfect for small teams getting started',
+          description: 'Perfect for small firms getting started',
           monthlyPrice: 29,
           yearlyPrice: 290,
+          onboardingFee: 500,
           features: [
-            'Up to 5 team members',
+            'Up to 3 team members',
             'Basic analytics dashboard',
             '10GB storage',
             'Email support',
@@ -27,6 +28,7 @@ import React, { useState } from 'react';
           description: 'Most popular for growing businesses',
           monthlyPrice: 79,
           yearlyPrice: 790,
+          onboardingFee: 1000,
           features: [
             'Up to 25 team members',
             'Advanced analytics & reporting',
@@ -45,6 +47,7 @@ import React, { useState } from 'react';
           description: 'For large organizations with custom needs',
           monthlyPrice: 199,
           yearlyPrice: 1990,
+          onboardingFee: 2500,
           features: [
             'Unlimited team members',
             'Custom analytics & AI insights',
@@ -189,10 +192,14 @@ import React, { useState } from 'react';
                       <div className="text-zinc-500">
                         per {isYearly ? 'year' : 'month'}
                         {isYearly && (
-                          <span className="block text-sm text-cyan-600 font-medium">
+                          <span className="block text-sm text-brand-400 font-medium">
                             Save ${(plan.monthlyPrice * 12) - plan.yearlyPrice}
                           </span>
                         )}
+                      </div>
+                      <div className="mt-3 pt-3 border-t border-slate-200">
+                        <div className="text-sm text-zinc-500">One-time onboarding</div>
+                        <div className="text-xl font-semibold text-zinc-900">${plan.onboardingFee}</div>
                       </div>
                     </div>
 
