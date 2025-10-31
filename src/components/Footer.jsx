@@ -63,13 +63,13 @@ import React, { useState } from 'react';
         //   { name: 'Webinars', href: '#' },
         //   { name: 'Case Studies', href: '#portfolio' }
         // ],
-        Legal: [
-          { name: 'Privacy Policy', href: '#' },
-          { name: 'Terms of Service', href: '#' },
-          // { name: 'Cookie Policy', href: '#' },
-          // { name: 'GDPR', href: '#' },
-          { name: 'Security', href: '#' }
-        ]
+        // Legal: [
+        //   { name: 'Privacy Policy', href: '#' },
+        //   { name: 'Terms of Service', href: '#' },
+        //   // { name: 'Cookie Policy', href: '#' },
+        //   // { name: 'GDPR', href: '#' },
+        //   { name: 'Security', href: '#' }
+        // ]
       };
 
       const socialLinks = [
