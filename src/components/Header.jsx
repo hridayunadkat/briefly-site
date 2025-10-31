@@ -71,13 +71,16 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:block">
-            <motion.button
+            <motion.a
+              href="https://calendly.com/usebriefly/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-brand-600 text-white px-6 py-2 rounded-full font-medium hover:bg-brand-700 transition-all duration-200 shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              Get Started
-            </motion.button>
+              Book a Demo
+            </motion.a>
           </div>
 
           <div className="md:hidden">
@@ -111,9 +114,14 @@ const Header = () => {
                   {item.label}
                 </button>
               ))}
-              <button className="w-full bg-blue-700 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-800 transition-all duration-200 mt-4">
-                Get Started
-              </button>
+              <a
+                href="https://calendly.com/usebriefly/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-brand-600 text-white px-6 py-2 rounded-full font-medium hover:bg-brand-700 transition-all duration-200 mt-4 text-center"
+              >
+                Book a Demo
+              </a>
             </div>
           </motion.div>
         )}

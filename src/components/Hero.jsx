@@ -57,16 +57,19 @@ import React from 'react';
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <motion.button
+                <motion.a
+                  href="https://calendly.com/usebriefly/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-gradient-to-r from-brand-600 to-brand-400 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-200 shadow-xl hover:shadow-2xl flex items-center group"
                   whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  Start Free Trial
+                  Book a Demo
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
-                </motion.button>
+                </motion.a>
 
-                <motion.button
+                {/* <motion.button
                   className="flex items-center px-8 py-4 text-zinc-700 hover:text-blue-700 font-semibold text-lg transition-all duration-200 group"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -75,7 +78,7 @@ import React from 'react';
                     <Play className="w-5 h-5 text-brand-600 ml-1" />
                   </div>
                   Watch Demo
-                </motion.button>
+                </motion.button> */}
               </motion.div>
 
               {/* Social Proof (temporarily commented out)

@@ -76,7 +76,7 @@ import React, { useState } from 'react';
         { name: 'Twitter', icon: Twitter, href: 'https://twitter.com' },
         { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
         { name: 'GitHub', icon: Github, href: 'https://github.com' },
-        { name: 'Email', icon: Mail, href: 'mailto:hello@briefly.com' }
+        { name: 'Email', icon: Mail, href: 'mailto:usebriefly@gmail.com' }
       ];
 
       return (
