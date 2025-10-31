@@ -35,7 +35,7 @@ import React, { useState } from 'react';
             'CRM integration (Clio, HubSpot, etc.)',
             'Call summaries & lead logs',
             'Private text chat support',
-            'Biweekly report from the Briefly Team'
+            'Biweekly report from the Briefly Team',
             'Advanced analytics & lead scoring',
             'Custom call scripts and workflows',
             'Custom API access and advanced CRM sync',
@@ -56,11 +56,11 @@ import React, { useState } from 'react';
             'CRM integration (Clio, HubSpot, etc.)',
             'Call summaries & lead logs',
             'Private text chat support',
-            'Weekly report from the Briefly Team'
-            'Advanced analytics & lead scoring',
+            'Weekly report from the Briefly Team',
+            'Advanced analytics and lead scoring',
             'Custom call scripts and workflows',
             'Custom API access and advanced CRM sync',
-            'Call recording and transcription search'
+            'Call recording and transcription search',
             'Custom security and compliance',
             'Custom integrations and automations',
             'Training and onboarding included',
