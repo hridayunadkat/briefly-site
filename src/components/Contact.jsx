@@ -41,8 +41,13 @@ const Contact = () => {
         body: formData,
       });
 
+      if (!response.ok) {
+        toast.error('Submission failed. Please try again.');
+        return;
+      }
+
       const result = await response.json();
-      if (result.success) {
+      if (result && result.success) {
         toast.success('Message sent! We\'ll get back to you within 24 hours.');
         reset();
       } else {
