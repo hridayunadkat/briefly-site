@@ -260,21 +260,31 @@ import React, { useState } from 'react';
                 All plans include a 14-day free trial. No credit card required.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <motion.a
-                  href="#features"
+                <motion.button
+                  onClick={() => {
+                    const element = document.getElementById('features');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                   className="text-brand-600 hover:text-brand-700 font-medium underline"
                   whileHover={{ scale: 1.05 }}
                 >
                   Compare all features
-                </motion.a>
+                </motion.button>
                 <span className="text-zinc-400">•</span>
-                <motion.a
-                  href="#contact"
+                <motion.button
+                  onClick={() => {
+                    const element = document.getElementById('contact');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
                   className="text-brand-600 hover:text-brand-700 font-medium underline"
                   whileHover={{ scale: 1.05 }}
                 >
                   Contact sales for custom pricing
-                </motion.a>
+                </motion.button>
               </div>
             </motion.div>
           </div>
