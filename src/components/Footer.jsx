@@ -55,7 +55,7 @@ import React, { useState } from 'react';
           // { name: 'Blog', href: '#' },
           // { name: 'Press Kit', href: '#' },
           { name: 'Contact', href: '#contact' }
-        ]
+        ],
         // Resources: [
         //   { name: 'Help Center', href: '#' },
         //   { name: 'Community', href: '#' },
