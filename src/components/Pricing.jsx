@@ -64,7 +64,6 @@ import React, { useState } from 'react';
             'Custom security and compliance',
             'Custom integrations and automations',
             'Training and onboarding included',
-            'Custom feature requests and integrations'
           ],
           color: 'from-brand-400 to-brand-600',
           popular: false
@@ -193,11 +192,14 @@ import React, { useState } from 'react';
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.3 }}
                       >
-                        ${isYearly ? plan.yearlyPrice : plan.monthlyPrice}
+                        {typeof (isYearly ? plan.yearlyPrice : plan.monthlyPrice) === 'string' 
+                          ? (isYearly ? plan.yearlyPrice : plan.monthlyPrice)
+                          : `$${isYearly ? plan.yearlyPrice : plan.monthlyPrice}`
+                        }
                       </motion.div>
                       <div className="text-zinc-500">
-                        per {isYearly ? 'year' : 'month'}
-                        {isYearly && (
+                        {typeof (isYearly ? plan.yearlyPrice : plan.monthlyPrice) !== 'string' && `per ${isYearly ? 'year' : 'month'}`}
+                        {isYearly && typeof plan.monthlyPrice === 'number' && typeof plan.yearlyPrice === 'number' && (
                           <span className="block text-sm text-brand-400 font-medium">
                             Save ${(plan.monthlyPrice * 12) - plan.yearlyPrice}
                           </span>
@@ -205,7 +207,12 @@ import React, { useState } from 'react';
                       </div>
                       <div className="mt-3 pt-3 border-t border-slate-200">
                         <div className="text-sm text-zinc-500">One-time onboarding</div>
-                        <div className="text-xl font-semibold text-zinc-900">${plan.onboardingFee}</div>
+                        <div className="text-xl font-semibold text-zinc-900">
+                          {typeof plan.onboardingFee === 'string' 
+                            ? plan.onboardingFee
+                            : `$${plan.onboardingFee}`
+                          }
+                        </div>
                       </div>
                     </div>
 
