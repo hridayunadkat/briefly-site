@@ -30,7 +30,7 @@ import React, { useState } from 'react';
           monthlyPrice: 249,
           yearlyPrice: 2490,
           onboardingFee: 299,
-          calendlyUrl: 'https://calendly.com/usebriefly/kickoff-meeting-starter-plan-clone',
+          calendlyUrl: 'https://calendly.com/usebriefly/kickoff-meeting-professional-plan',
           features: [
             'Up to 10 team members',
             'Unlimited AI intake calls',
@@ -52,7 +52,7 @@ import React, { useState } from 'react';
           monthlyPrice: 'Custom',
           yearlyPrice: 'Custom',
           onboardingFee: 'Custom',
-          calendlyUrl: 'https://calendly.com/usebriefly/kickoff-meeting-professional-plan-clone',
+          calendlyUrl: 'https://calendly.com/usebriefly/kickoff-meeting-enterprise-plan',
           features: [
             'Custom number of team members',
             'Unlimited AI intake calls',
