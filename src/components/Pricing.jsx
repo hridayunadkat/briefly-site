@@ -8,57 +8,63 @@ import React, { useState } from 'react';
       const plans = [
         {
           name: 'Starter',
-          description: 'Perfect for small firms getting started',
-          monthlyPrice: 29,
-          yearlyPrice: 290,
-          onboardingFee: 500,
+          description: 'Perfect for solo attorneys and small firms getting started',
+          monthlyPrice: 99,
+          yearlyPrice: 999,
+          onboardingFee: 149,
           features: [
             'Up to 3 team members',
-            'Basic analytics dashboard',
-            '10GB storage',
+            'Unlimited AI intake calls',
+            'CRM integration (Clio, HubSpot, etc.)',
+            'Call summaries & lead logs',
             'Email support',
-            'Basic integrations',
-            'Mobile app access'
+            'Monthly report from the Briefly Team'
           ],
           color: 'from-slate-500 to-slate-700',
           popular: false
         },
         {
           name: 'Professional',
-          description: 'Most popular for growing businesses',
-          monthlyPrice: 79,
-          yearlyPrice: 790,
-          onboardingFee: 1000,
+          description: 'Most popular for growing firms looking to scale intake',
+          monthlyPrice: 249,
+          yearlyPrice: 2490,
+          onboardingFee: 299,
           features: [
-            'Up to 25 team members',
-            'Advanced analytics & reporting',
-            '100GB storage',
-            'Priority support',
-            'All integrations',
-            'Custom workflows',
-            'API access',
-            'Advanced security'
+            'Up to 10 team members',
+            'Unlimited AI intake calls',
+            'CRM integration (Clio, HubSpot, etc.)',
+            'Call summaries & lead logs',
+            'Private text chat support',
+            'Biweekly report from the Briefly Team'
+            'Advanced analytics & lead scoring',
+            'Custom call scripts and workflows',
+            'Custom API access and advanced CRM sync',
+            'Call recording and transcription search'
           ],
           color: 'from-brand-600 to-brand-400',
           popular: true
         },
         {
           name: 'Enterprise',
-          description: 'For large organizations with custom needs',
-          monthlyPrice: 199,
-          yearlyPrice: 1990,
-          onboardingFee: 2500,
+          description: 'For large firms with custom needs and security requirements',
+          monthlyPrice: 'Custom',
+          yearlyPrice: 'Custom',
+          onboardingFee: 'Custom',
           features: [
-            'Unlimited team members',
-            'Custom analytics & AI insights',
-            'Unlimited storage',
-            '24/7 dedicated support',
-            'Custom integrations',
-            'White-label solution',
-            'Advanced API access',
-            'Enterprise security',
-            'Custom training',
-            'SLA guarantee'
+            'Custom number of team members',
+            'Unlimited AI intake calls',
+            'CRM integration (Clio, HubSpot, etc.)',
+            'Call summaries & lead logs',
+            'Private text chat support',
+            'Weekly report from the Briefly Team'
+            'Advanced analytics & lead scoring',
+            'Custom call scripts and workflows',
+            'Custom API access and advanced CRM sync',
+            'Call recording and transcription search'
+            'Custom security and compliance',
+            'Custom integrations and automations',
+            'Training and onboarding included',
+            'Custom feature requests and integrations'
           ],
           color: 'from-brand-400 to-brand-600',
           popular: false
