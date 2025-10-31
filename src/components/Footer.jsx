@@ -55,7 +55,7 @@ import React, { useState } from 'react';
           // { name: 'Blog', href: '#' },
           // { name: 'Press Kit', href: '#' },
           { name: 'Contact', href: '#contact' }
-        ],
+        ]
         // Resources: [
         //   { name: 'Help Center', href: '#' },
         //   { name: 'Community', href: '#' },
@@ -73,9 +73,9 @@ import React, { useState } from 'react';
       };
 
       const socialLinks = [
-        { name: 'Twitter', icon: Twitter, href: 'https://twitter.com' },
-        { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
-        { name: 'GitHub', icon: Github, href: 'https://github.com' },
+        // { name: 'Twitter', icon: Twitter, href: 'https://twitter.com' },
+        // { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com' },
+        // { name: 'GitHub', icon: Github, href: 'https://github.com' },
         { name: 'Email', icon: Mail, href: 'mailto:usebriefly@gmail.com' }
       ];
 
