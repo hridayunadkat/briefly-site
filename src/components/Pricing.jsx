@@ -9,9 +9,12 @@ import React, { useState } from 'react';
         {
           name: 'Starter',
           description: 'Perfect for solo attorneys and small firms getting started',
-          monthlyPrice: 99,
-          yearlyPrice: 999,
-          onboardingFee: 149,
+          // monthlyPrice: 99,
+          // yearlyPrice: 999,
+          // onboardingFee: 149,
+          monthlyPrice: 'Custom',
+          yearlyPrice: 'Custom',
+          onboardingFee: 'Custom',
           calendlyUrl: 'https://calendly.com/usebriefly/kickoff-meeting-starter-plan',
           features: [
             'Up to 3 team members',
@@ -27,9 +30,12 @@ import React, { useState } from 'react';
         {
           name: 'Professional',
           description: 'Most popular for growing firms looking to scale intake',
-          monthlyPrice: 249,
-          yearlyPrice: 2490,
-          onboardingFee: 299,
+          // monthlyPrice: 249,
+          // yearlyPrice: 2490,
+          // onboardingFee: 299,
+          monthlyPrice: 'Custom',
+          yearlyPrice: 'Custom',
+          onboardingFee: 'Custom',
           calendlyUrl: 'https://calendly.com/usebriefly/kickoff-meeting-professional-plan',
           features: [
             'Up to 10 team members',
